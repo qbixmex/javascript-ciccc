@@ -31,3 +31,8 @@ console.log("Planet:", planet);
 //! You can't print constant 
 //! const year;
 //! console.log(year);
+
+//* VAR
+
+var college = "CICCC";
+console.log("College:", college);
