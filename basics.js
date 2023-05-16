@@ -1,38 +1,10 @@
-//* Declare and assign variables
-let userName = "qbixmex";
-let firstName = "Daniel";
-let lastName = "González Briseño";
+//* HOISTING
 
-console.log("User Name:", userName);
-console.log("First Name:", firstName);
-console.log("Last Name:", lastName);
-console.log("Full Name:", firstName, lastName);
+let num1 = 1;
+let num2 = 2;
+let num3 = 3;
+let num4 = 4;
 
-//* Declare variables
-let age;
-age = 10;
-console.log("Age:", age);
+console.log(num1, num2, num3, num4, num5);
 
-//! You can't re-declare a variable
-//! let age;
-
-age = 12;
-
-console.log("Age:", age);
-
-//* CONSTANTS
-const planet = "EARTH";
-
-console.log("Planet:", planet);
-
-//! You can't assign a constant variable
-//! planet = "MARS";
-
-//! You can't print constant 
-//! const year;
-//! console.log(year);
-
-//* VAR
-
-var college = "CICCC";
-console.log("College:", college);
+var num5 = 5;
