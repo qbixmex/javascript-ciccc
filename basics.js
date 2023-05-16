@@ -1,18 +1,25 @@
-//* Global Scope
-//* Representing the universe
-let name = "Universe";
-let population = "10 Billion";
+var number = 5;
 
-console.log("Name:", name);
-console.log("Population", population);
+/**
+ * Prints a number and add 2 to that one.
+ */
+function addTwo() {
 
-console.log("*".repeat(40));
+  console.log("Running addTwo")
 
-{
-  //* Local Scope
-  //* Representing Planet Scope
-  let planet = "earth";
-  let population = "7.8 Billion";
-  console.log("Name:", name);
-  console.log("Population", population);
+  const additionBy = 2;
+  let sum;
+
+  if ( number < 10 ) { //* TRUE
+    sum = number + additionBy;
+    console.log(sum);
+  } else { //* FALSE
+    sum = number;
+    console.log(sum);
+  }
+
+  console.log("Final Sum:", sum);
+
 }
+
+addTwo();
