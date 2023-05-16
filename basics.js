@@ -1,10 +1,18 @@
-//* HOISTING
+//* Global Scope
+//* Representing the universe
+let name = "Universe";
+let population = "10 Billion";
 
-let num1 = 1;
-let num2 = 2;
-let num3 = 3;
-let num4 = 4;
+console.log("Name:", name);
+console.log("Population", population);
 
-console.log(num1, num2, num3, num4, num5);
+console.log("*".repeat(40));
 
-var num5 = 5;
+{
+  //* Local Scope
+  //* Representing Planet Scope
+  let planet = "earth";
+  let population = "7.8 Billion";
+  console.log("Name:", name);
+  console.log("Population", population);
+}
