@@ -1,21 +1,10 @@
-const addTwoNumbers = function(a, b) {
-  return a + b;
-};
+const addTwoNumbers = (a, b) => a + b;
 
-const subtractNumber = (a, b) => {
-  return a - b;
-};
-
-const divideNumber = (a, b) => a - b;
-
-let result;
-
-result = addTwoNumbers(2, 6);
+function printSumOfTwoNumbers(a, b, callBack) {
+  console.log(`The sum of ${a} and ${b} is ${callBack(a, b)}`);
+}
 
 console.log();
 
-console.log('Addition:', result);
-
-result = subtractNumber(8, 6);
-
-console.log('Subtraction:', result);
+printSumOfTwoNumbers(8, 4, addTwoNumbers);
+printSumOfTwoNumbers(5, 8, (a, b) => a + b);
