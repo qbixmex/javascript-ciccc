@@ -1,40 +1,21 @@
-function sayHello(name) {
-  console.log(`Hello ${name}`);
-}
-
-console.log();
-
-sayHello('Daniel');
-sayHello('Rafael');
-sayHello('Michael');
-
-console.log("=".repeat(40));
-
-function squareNumber(n) {
-  console.log("Result:", n * n);
-}
-
-squareNumber(2);
-squareNumber(4);
-squareNumber(7);
-squareNumber(8);
-
-console.log("=".repeat(40));
-
-function addTwoNumbers(a, b) {
+const addTwoNumbers = function(a, b) {
   return a + b;
-}
+};
+
+const subtractNumber = (a, b) => {
+  return a - b;
+};
+
+const divideNumber = (a, b) => a - b;
 
 let result;
 
-result = addTwoNumbers(77, 33);
+result = addTwoNumbers(2, 6);
 
-console.log("Result:", result);
+console.log();
 
-//* User Input
-let number1 = 83;
-let number2 = 95;
+console.log('Addition:', result);
 
-result = addTwoNumbers(number1, number2);
+result = subtractNumber(8, 6);
 
-console.log("Result:", result);
+console.log('Subtraction:', result);
