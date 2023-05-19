@@ -29,17 +29,45 @@ Afterwards, use this template to print a message to the console if the mystery w
 
 __________ did it in the __________ with the __________!
 
-What goes into the three blank spaces? You can fill in the blanks with the name of the suspect, the room, and the weapon! For example, an output string may look like:
+What goes into the three blank spaces? You can fill in the blanks with the name of the suspect,
+the room, and the weapon!
+For example, an output string may look like:
 
 Mr. Parkes did it in the dining room with the knife!
 */
 
-const room1 = "the ballroom";
-const room2 = "gallery";
-const room3 = "billiards room";
-const room4 = "and dining room";
+function printStatements(weapon, room) {
 
-const suspect1 = "Mr. Parkes";
-const suspect2 = "Ms. Van Cleve"; 
-const suspect3 = "Mrs. Sparr";
-const suspect4 = "and Mr. Kalehoff";
+  let suspect;
+
+  if (weapon == "poison" && room == "the ballroom") {
+    suspect = "Mr. Kalehoff";
+  } else if (weapon == "trophy" && room == "gallery") {
+    suspect = "Ms. Van Cleve";
+  } else if (weapon == "pool stick" && room == "billiards room") {
+    suspect = "Mrs. Sparr";
+  } else if (weapon == "knife" && room == "dining room") {
+    suspect = "Mr. Parkes";
+  }
+
+  console.log("Weapon:", weapon);
+  console.log("Room:", room);
+  console.log(`${suspect} did it in the ${room} with the ${weapon}!`);
+
+}
+
+console.log();
+
+printStatements("poison", "the ballroom");
+
+console.log("=".repeat(60));
+
+printStatements("trophy", "gallery");
+
+console.log("=".repeat(60));
+
+printStatements("pool stick", "billiards room");
+
+console.log("=".repeat(60));
+
+printStatements("knife", "dining room");
