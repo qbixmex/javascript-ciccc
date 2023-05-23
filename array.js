@@ -1,24 +1,17 @@
-const colors = [];
+let multi = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+  [10, 11, 12],
+]
 
-colors.push("Red");
-colors.push("Blue");
-colors.push("Red");
+let sum = 0;
+for (let i = 0; i < multi.length; i++) {
+  let array = multi[i];
+  for (let j = 0; j < array.length; j++) {
+    console.log(i, '-', Int8Array[j]);
+    sum += array[j];
+  }
+}
 
-console.log();
-console.log(colors);
-
-console.log(colors.pop());
-
-console.log(colors);
-
-colors.splice(2, 0, "Orange");
-
-console.log(colors);
-
-colors.splice(2, 1, "Pink");
-
-console.log(colors);
-
-colors.splice(2, 1);
-
-console.log(colors);
+console.log("\nSummary", sum);
