@@ -6,3 +6,5 @@
 - Switch
 - Loops
 - Functions
+- Arrays
+- Objects
